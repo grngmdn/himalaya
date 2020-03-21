@@ -1,0 +1,22 @@
+{
+  "name": "himalaya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grngmdn/himalaya.git"
+  },
+  "author": "Madan Gurung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grngmdn/himalaya/issues"
+  },
+  "homepage": "https://github.com/grngmdn/himalaya#readme",
+  "dependencies": {
+    "stickybits": "^3.7.4"
+  }
+}
