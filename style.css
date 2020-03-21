@@ -32,10 +32,6 @@ header .logo a {
   color: #09383e;
 }
 
-header .logo a:hover {
-  color: white;
-}
-
 header.js-is-sticky {
   background: rgba(254, 254, 254, 0.9);
   height: 4vh;
@@ -68,7 +64,7 @@ header.js-is-sticky {
 }
 
 .navigation a:hover {
-  color: #fdfdfd;
+  border-bottom: 3px solid #09383e;
 }
 
 .section-one {
@@ -596,7 +592,7 @@ header.js-is-sticky {
     position: absolute;
     height: 80vh;
     right: 0;
-    top: 4vh;
+    top: 3vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,7 +619,7 @@ header.js-is-sticky {
             transform: translateX(0%);
   }
   header .burger-container {
-    margin: 20px 20px 0px 0px;
+    margin: 15px 20px 0px 0px;
     cursor: pointer;
   }
   header .burger-container .burger {
