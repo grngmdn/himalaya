@@ -26,8 +26,8 @@
       <nav class="navigation">
         <ul class="navigation-ul">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Mountains</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mountains.html">Mountains</a></li>
         </ul>
         <div class="burger-container">
           <div class="burger burger1"></div>
@@ -41,7 +41,7 @@
         <p>N 27° 59' 9.8340' | E 86° 55' 21.4428'</p>
       </div>
       <div class="container">
-        <h1 class="animated fadeInUp slow">
+        <h1 class="animated fadeInRight slow">
           discover
           <span class="subheading animated fadeInRight slow"
             >the himalayas</span
@@ -51,7 +51,7 @@
     </section>
     <section class="section-two">
       <div class="fun-facts">
-        <div class="facts-child child-two animated fadeIn slow">
+        <div class="facts-child child-two fade-In">
           <h1 class="facts-header">
             110
           </h1>
@@ -59,7 +59,7 @@
             Peaks over 7,000 metres (23,000 ft)
           </p>
         </div>
-        <div class="facts-child child-three animated fadeIn slow">
+        <div class="facts-child child-three fade-In">
           <h1 class="facts-header">
             6 Countries
           </h1>
@@ -67,7 +67,7 @@
             Passes through Nepal, India, China, Pakistan, Bhutan, Afghan
           </p>
         </div>
-        <div class="facts-child child-four animated fadeIn slow">
+        <div class="facts-child child-four fade-In">
           <h1 class="facts-header">
             Mount Everest
           </h1>
@@ -75,7 +75,7 @@
             Highest peak in the world (8,850)
           </p>
         </div>
-        <div class="facts-child child-five animated fadeIn slow">
+        <div class="facts-child child-five fade-In">
           <h1 class="facts-header">
             3rd Largest
           </h1>
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="introduction">
-        <div class="introduction-left">
+        <div class="introduction-left slide-In fromLeft">
           <h1>
             The Himalayan Mountain Range
           </h1>
@@ -99,23 +99,15 @@
             great mountain system.
           </p>
         </div>
-        <div class="introduction-right">
-          <img
-            src="img/image-one.jpg"
-            alt="mountain image"
-            class="animated fadeInRight slow"
-          />
+        <div class="introduction-right slide-In fromRight">
+          <img src="img/image-one.jpg" alt="mountain image" class="" />
         </div>
       </div>
       <div class="info-one">
-        <div class="info-one-left">
-          <img
-            src="img/image-two.jpg"
-            alt="mountain image"
-            class="animated fadeInLeft slow"
-          />
+        <div class="info-one-left slide-In fromLeft">
+          <img src="img/image-two.jpg" alt="mountain image" class="" />
         </div>
-        <div class="info-one-right">
+        <div class="info-one-right slide-In fromRight">
           <h1>
             Study And Exploration
           </h1>
@@ -135,7 +127,7 @@
           9 of the top 10 tallest mountains in the world reside in the
           Himalayas.
         </p>
-        <div class="mountains animated fadeIn slow">
+        <div class="mountains fade-In">
           <div class="item1"><h1>Everest</h1></div>
           <div class="item2"><h1>Kanchenjunga</h1></div>
           <div class="item3"><h1>Lhotse I</h1></div>
@@ -149,13 +141,9 @@
       </div>
 
       <div class="info-two">
-        <div class="image-gallery-container">
+        <div class="image-gallery-container fade-In">
           <div class="image-gallery-container-child1">
-            <img
-              class="image animated fadeIn slow"
-              id="mainImage"
-              src="img/a.jpg"
-            />
+            <img class="image" id="mainImage" src="img/a.jpg" />
           </div>
           <div class="image-gallery-container-child2">
             <img
@@ -182,15 +170,17 @@
         </div>
       </div>
       <div class="back-top">
-        <div class="back-top-circle">
-          <i class="fa">&#xf176;</i>
-          <a href="#">Back to top</a>
-        </div>
+        <a href="#">
+          <div class="back-top-circle">
+            <i class="fa">&#xf176;</i>
+            <span>Back to top</span>
+          </div>
+        </a>
       </div>
       <div class="footer"></div>
       <div class="contact">
         <div class="contact-left">
-          <h1 class="animated fadeIn slow">Get in touch</h1>
+          <h1 class="">Get in touch</h1>
           <h2>Join our mailing list.</h2>
           <p>
             07456086580 <br />
@@ -208,8 +198,8 @@
             <a href="#" class="fa fa-instagram"></a>
           </div>
         </div>
-        <div class="contact-right">
-          <p class="animated fadeInUp slow">
+        <div class="contact-right fade-In">
+          <p>
             Hi! Thanks for being here. We hope you learned something new
             today.<br />
             <span><a href="index.html">Learn more</a></span>
@@ -224,5 +214,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="lazyLoad.js"></script>
   </body>
 </html>

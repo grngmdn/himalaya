@@ -1,3 +1,13 @@
+/*
+	==========================
+	variables
+	==========================
+*/
+/*
+	==========================
+	global styles reset
+	==========================
+*/
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+/*
+	==========================
+	logo
+	==========================
+*/
 .logo {
   margin: 10px 0px 0px 20px;
   cursor: pointer;
@@ -23,6 +38,11 @@ body {
   color: #09383e;
 }
 
+/*
+	==========================
+	header
+	==========================
+*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +58,11 @@ header.js-is-sticky {
   z-index: 999;
 }
 
+/*
+	==========================
+	navigation
+	==========================
+*/
 .navigation {
   color: #09383e;
 }
@@ -67,6 +92,32 @@ header.js-is-sticky {
   border-bottom: 3px solid #09383e;
 }
 
+/*
+	=======================================
+	background image with opacity
+	=======================================
+*/
+.section-one::before {
+  background-image: url(img/image-four.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+/*
+	==========================
+	body
+	==========================
+*/
 .section-one {
   height: 96vh;
 }
@@ -114,20 +165,42 @@ header.js-is-sticky {
   letter-spacing: 0.5em;
 }
 
-.section-one::before {
-  background-image: url(img/image-four.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
+.section-two {
+  /*
+	=======================================
+  Four  Fun facts section
+	=======================================
+*/
+  /*
+	=======================================
+  The Himalayan Mountain Range section
+	=======================================
+*/
+  /*
+	=======================================
+  Study and exploration section
+	=======================================
+*/
+  /*
+	==========================
+	image gallery section
+	==========================
+*/
+  /*
+	==========================
+	image collage section
+	==========================
+*/
+  /*
+	=======================================
+	back-to-top circle button
+	=======================================
+*/
+  /*
+	==========================
+	contacts section
+	==========================
+*/
 }
 
 .section-two .fun-facts {
@@ -489,6 +562,10 @@ header.js-is-sticky {
           flex-direction: column;
 }
 
+.section-two .back-top a {
+  text-decoration: none;
+}
+
 .section-two .back-top .back-top-circle {
   border: 2px solid #09383e;
   padding: 20px;
@@ -526,16 +603,15 @@ header.js-is-sticky {
   color: white;
 }
 
-.section-two .back-top .back-top-circle a {
+.section-two .back-top .back-top-circle span {
   margin-top: 10px;
   font-size: 0.7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #09383e;
 }
 
-.section-two .back-top .back-top-circle:hover a {
+.section-two .back-top .back-top-circle:hover span {
   color: white;
 }
 
@@ -626,6 +702,56 @@ header.js-is-sticky {
   border-bottom: 3px solid #09383e;
 }
 
+/*
+	==========================
+	intersection observer
+	==========================
+*/
+.fade-In {
+  opacity: 0;
+  -webkit-transition: opacity 550ms ease-in;
+  transition: opacity 550ms ease-in;
+}
+
+.fade-In.appear {
+  opacity: 1;
+}
+
+/* fade-in from side for pictures and texts*/
+/* original position */
+.fromLeft {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.fromRight {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+/* adding transition for opacity and transform */
+.fromLeft,
+.fromRight {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+/* making the opacity visible and moving the transform to final position */
+.fromLeft.appear,
+.fromRight.appear {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/*
+	==========================
+	footer
+	==========================
+*/
 .footer {
   width: 100%;
   height: 3vh;
@@ -652,6 +778,11 @@ header.js-is-sticky {
   font-size: 0.8rem;
 }
 
+/*
+	==========================
+	Tablet view
+	==========================
+*/
 @media only screen and (max-width: 1200px) {
   .section-one .container h1 {
     font-size: 8vw;
@@ -669,6 +800,11 @@ header.js-is-sticky {
   }
 }
 
+/*
+	==========================
+	Mobile view
+	==========================
+*/
 @media only screen and (max-width: 600px) {
   header {
     display: -webkit-box;
@@ -751,5 +887,10 @@ header.js-is-sticky {
     letter-spacing: 0.4em;
     z-index: -1;
   }
+  /*
+	==========================
+	section-two
+	==========================
+*/
 }
 /*# sourceMappingURL=style.css.map */
